@@ -5,19 +5,8 @@ interface Props{
 }
 const {title="Default title",content="Content Default"} = Astro.props
 ---
-<div class="card">
+<div class="bg-sky-500 p-10 m-2 mb-3">
     <h1>{title}</h1>
     <p>{content}</p>
 </div>
 
-<style>
-    .card{
-        background-color: #fff;
-        border-radius: 5px;
-        box-shadow:  0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        width: 300px;
-        margin-bottom: 5px;
-        color: #202020;
-    }
-</style>

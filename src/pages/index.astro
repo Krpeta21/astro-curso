@@ -1,7 +1,11 @@
 ---
 import Layout from "../components/Layout.astro";
+import Button from '../components/ButtonSubscribe'
+  import 'react-toastify/dist/ReactToastify.css';
+
 ---
 <Layout pageTitle="Index" pageDescription="Esto es la pagina principal de un portafolio digital de desarrollador">
 	<h1>Pagina Inicial</h1>
 	<p>Bienvenido a mi blog</p>
+	<Button client:load/>
 </Layout>
