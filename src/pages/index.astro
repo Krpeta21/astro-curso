@@ -1,54 +1,7 @@
 ---
-const title = 'Mi proyecto en astro'
-const color = "warning"
-
-const hobbies= [
-	'Programar','Videojuegos','Anime'
-]
-const isActive = true;
+import Layout from "../components/Layout.astro";
 ---
-<ul>
-{
-	hobbies.map((name)=>{
-		return (
-			<li class={color}>
-				<h3>{name}</h3>
-				<button class="btnS">Like</button>	
-			</li>
-			)
-	})
-}
-</ul>
-<h3 class={isActive ? color : 'warning'}>{isActive ? 'Usuario activo':'Usuario inactivo'}</h3>
-<script>
-	console.log("hola mundo")
-</script>
-<style>
-body{
-	background-color: #202020;
-	color: white;
-}
-.title{
-	color:skyblue;
-}
-.danger{
-	color: red;
-}
-.warning{
-	color: yellow;
-	list-style: none;	
-}
-.btnS{
-	cursor: pointer;
-    margin-left: 16px;
-    border: 0;
-    border-radius: 999px;
-    padding: 6px 16px;
-    font-weight: bold;
-    border: 1px solid #000;
-    transition: .3s ease background-color;
-}
-.btnS:hover{
-	opacity: 0.8;
-}
-</style>
+<Layout pageTitle="Index" pageDescription="Esto es la pagina principal de un portafolio digital de desarrollador">
+	<h1>Pagina Inicial</h1>
+	<p>Bienvenido a mi blog</p>
+</Layout>

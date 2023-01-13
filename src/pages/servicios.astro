@@ -1,2 +1,18 @@
-<h1>Mis servicios</h1>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsam rerum corporis sit, quas recusandae nemo quo accusamus reprehenderit iure.</p>
+---
+import Card from "../components/card.astro";
+import Layout from "../components/Layout.astro";
+---
+
+<Layout pageTitle="Servicios">
+  <h1>Mis servicios</h1>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsam rerum
+    corporis sit, quas recusandae nemo quo accusamus reprehenderit iure.
+  </p>
+
+  <Card title="Irving" content="Hola soy irving" />
+  <Card title="Jordi" content="Hola soy jordi" />
+  <Card title="Alejandro" content="Hola soy alejandro" />
+  <Card title="Wicho" content="Hola soy wicho" />
+  <Card />
+</Layout>
